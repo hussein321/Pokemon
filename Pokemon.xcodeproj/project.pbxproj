@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC7417CFB7755B2466D87F84 /* Pods_Pokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762BE43B6F8D830C3E014 /* Pods_Pokemon.framework */; };
+		D61BEA381D02E6410077BE76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61BEA371D02E6410077BE76 /* Constants.swift */; };
 		D65DF9C31D0224FE0045EDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF9C21D0224FE0045EDF7 /* AppDelegate.swift */; };
 		D65DF9C51D0224FE0045EDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF9C41D0224FE0045EDF7 /* ViewController.swift */; };
 		D65DF9C81D0224FE0045EDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65DF9C61D0224FE0045EDF7 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		2B9CAEE11F590DB8E45F941D /* Pods-Pokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokemon/Pods-Pokemon.debug.xcconfig"; sourceTree = "<group>"; };
 		790762BE43B6F8D830C3E014 /* Pods_Pokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6849AC580C9C9ED14A273FD /* Pods-Pokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokemon/Pods-Pokemon.release.xcconfig"; sourceTree = "<group>"; };
+		D61BEA371D02E6410077BE76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D65DF9BF1D0224FE0045EDF7 /* Pokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65DF9C21D0224FE0045EDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D65DF9C41D0224FE0045EDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				D65DF9DD1D023CE20045EDF7 /* csv.swift */,
+				D61BEA371D02E6410077BE76 /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				D65DF9D81D022A220045EDF7 /* Poke.swift in Sources */,
 				D65DF9C31D0224FE0045EDF7 /* AppDelegate.swift in Sources */,
 				D65DF9DE1D023CE20045EDF7 /* csv.swift in Sources */,
+				D61BEA381D02E6410077BE76 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
