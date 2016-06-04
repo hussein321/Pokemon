@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet var collectionView : UICollectionView!
 var pokemons = [Poke]()
     var fillterPoke = [Poke]()
+    var slideDown = SlideDownTransitionAnimator()
     
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -87,16 +88,56 @@ var pokemons = [Poke]()
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == "" || searchBar.text == nil {
             inSearchingMode = false
+            view.endEditing(true)
+            collectionView.reloadData()
         }
         else {
             inSearchingMode = true
             let lower = searchBar.text!.lowercaseString
-            fillterPoke = pokemons.filter({ $0.name.rangeOfString(lower) != nil })
+            fillterPoke = pokemons.filter({$0.name.rangeOfString(lower) != nil})
             collectionView.reloadData()
         }
     
     
         }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let pokemon : Poke!
+        if inSearchingMode {
+            pokemon  = fillterPoke[indexPath.row]
+            
+        }else {
+            pokemon = pokemons[indexPath.row]
+        }
+        
+        performSegueWithIdentifier("pokeDetailView", sender: pokemon)
+    }
+
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "pokeDetailView"{
+            let destinationVC = segue.destinationViewController as! pokeDetailView
+            if let pokemon = sender as? Poke {
+                destinationVC.pokemon = pokemon
+            }
+            destinationVC.transitioningDelegate = slideDown
+            
+            
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

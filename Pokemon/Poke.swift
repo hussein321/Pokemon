@@ -11,6 +11,16 @@ class Poke {
     
     private var _name : String!
     private var _pokemonId : Int!
+    private var _descrption : String!
+    private var _attck : String!
+    private var _type :String!
+    private var _defense :String!
+    private var _weight : String!
+    private var _heigt : String!
+    private var _nextEvolutionTxt : String!
+    
+    
+    
     
     
     var name : String {
