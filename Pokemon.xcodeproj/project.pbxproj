@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC7417CFB7755B2466D87F84 /* Pods_Pokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762BE43B6F8D830C3E014 /* Pods_Pokemon.framework */; };
 		D65DF9C31D0224FE0045EDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF9C21D0224FE0045EDF7 /* AppDelegate.swift */; };
 		D65DF9C51D0224FE0045EDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF9C41D0224FE0045EDF7 /* ViewController.swift */; };
 		D65DF9C81D0224FE0045EDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65DF9C61D0224FE0045EDF7 /* Main.storyboard */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B9CAEE11F590DB8E45F941D /* Pods-Pokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokemon/Pods-Pokemon.debug.xcconfig"; sourceTree = "<group>"; };
+		790762BE43B6F8D830C3E014 /* Pods_Pokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6849AC580C9C9ED14A273FD /* Pods-Pokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokemon/Pods-Pokemon.release.xcconfig"; sourceTree = "<group>"; };
 		D65DF9BF1D0224FE0045EDF7 /* Pokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65DF9C21D0224FE0045EDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D65DF9C41D0224FE0045EDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7417CFB7755B2466D87F84 /* Pods_Pokemon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37BDEEC660E5518B35FEB60D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				790762BE43B6F8D830C3E014 /* Pods_Pokemon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F94055599B46B64F393D31E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B9CAEE11F590DB8E45F941D /* Pods-Pokemon.debug.xcconfig */,
+				B6849AC580C9C9ED14A273FD /* Pods-Pokemon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D65DF9B61D0224FE0045EDF7 = {
 			isa = PBXGroup;
 			children = (
 				D65DF9C11D0224FE0045EDF7 /* Pokemon */,
 				D65DF9C01D0224FE0045EDF7 /* Products */,
+				7F94055599B46B64F393D31E /* Pods */,
+				37BDEEC660E5518B35FEB60D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D65DF9D11D0224FE0045EDF7 /* Build configuration list for PBXNativeTarget "Pokemon" */;
 			buildPhases = (
+				D47B1AEDBB4360441EA96990 /* 📦 Check Pods Manifest.lock */,
 				D65DF9BB1D0224FE0045EDF7 /* Sources */,
 				D65DF9BC1D0224FE0045EDF7 /* Frameworks */,
 				D65DF9BD1D0224FE0045EDF7 /* Resources */,
+				11B15C0CB1CAAD35C6CD92EB /* 📦 Embed Pods Frameworks */,
+				3ABA55565F0A3286D778399A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +208,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11B15C0CB1CAAD35C6CD92EB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokemon/Pods-Pokemon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ABA55565F0A3286D778399A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokemon/Pods-Pokemon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D47B1AEDBB4360441EA96990 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D65DF9BB1D0224FE0045EDF7 /* Sources */ = {
@@ -304,6 +379,7 @@
 		};
 		D65DF9D21D0224FE0045EDF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9CAEE11F590DB8E45F941D /* Pods-Pokemon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pokemon/Info.plist;
@@ -315,6 +391,7 @@
 		};
 		D65DF9D31D0224FE0045EDF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6849AC580C9C9ED14A273FD /* Pods-Pokemon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pokemon/Info.plist;
